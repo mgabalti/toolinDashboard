@@ -1,0 +1,38 @@
+.progress-list-type {
+    list-style: none;
+    padding: 0%;
+
+    li {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding: 10px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #f5f5f5;
+        }
+    }
+}
+
+.tool-table {
+    td {
+        border-bottom: 1px solid whitesmoke;
+        vertical-align: middle;
+        padding: 0.7rem;
+    }
+}
+
+
+
+.no-data-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    img {
+        width: 100px;
+    }
+}

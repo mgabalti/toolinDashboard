@@ -1,0 +1,82 @@
+.avatar-user {
+    background: #ffaf713b;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff7615;
+    border-radius: 50px;
+    padding-left: 19px;
+    border: 1px solid #ffa50069;
+    overflow: hidden;
+
+    cursor: pointer;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.setting-log {
+    padding: 10px  !important;
+    width: 230px;
+
+    li {
+        &:not(:first-child) {
+            cursor: pointer;
+
+            &:hover {
+                background-color: #ff76151c;
+            }
+
+        }
+        // &:not(:last-child) {
+        //     border-bottom: 1px solid gainsboro;
+        // }
+
+        padding: 7px 15px;
+
+        .fa {
+            font-size: 14px;
+        }
+
+    }
+}
+.dahboard-navbar{
+    @media  (min-width:1024px) {
+    border-radius: 1rem !important;
+    }
+}
+
+.navbar-brand-img-sm{
+    width: 110px !important;
+}
+
+.searching-bar
+{
+    position: relative;
+    input{
+        padding-right: 37px;
+    }
+    input:focus ~ span{
+        background-color: red !important;
+    }
+    span{
+        position: absolute;
+        right: 1px;
+        background: white;
+        width: 32px;
+        height: calc(100% - 2px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 1px;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        border-left: 1px solid #d2d6da;
+        cursor: pointer;
+    }
+}
